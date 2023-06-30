@@ -7,9 +7,9 @@ import cupyx.scipy.sparse as cusparse
 import cupyx.scipy.sparse.linalg
 import pandas as pd
 import time
-from preprocessor import write_keywords,write_birth,write_parameters
-from gamma import domain_mgr, heat_solve_mgr
-from func import elastic_stiff_matrix,constitutive_problem,transformation,disp_match
+from includes.preprocessor import write_keywords,write_birth,write_parameters
+from includes.gamma import domain_mgr, heat_solve_mgr
+from includes.func import elastic_stiff_matrix,constitutive_problem,transformation,disp_match
 cp.cuda.Device(3).use()
 import pyvista as pv
 import vtk
